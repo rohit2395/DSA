@@ -8,14 +8,15 @@ class Solution:
                 maj_index = 0
                 count = 1
                 for i in range(len(A)):
-
                     if A[maj_index] == A[i]:
                         count += 1
                     else:
                         count -= 1
+                    print(f"i = {i}, count = {count}, maj_index = {maj_index}")
                     if count == 0:
                         maj_index = i
                         count = 1
+                    print(f"i = {i}, count = {count}")
                 return A[maj_index]
         
         def isMajority(A, cand):

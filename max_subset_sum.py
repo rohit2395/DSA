@@ -56,7 +56,9 @@ class Solution:
 #Initial Template for Python 3
 
 if __name__=="__main__":
-    arr = [-2,-3,4,-1,-2,-1,15,-15,1,2,15,-3]
+    # arr = [-2,-3,4,-1,-2,-1,15,-15,1,2,15,-3]
+    # arr = [-2,-3,4,-1,2,-1]
+    arr = [2,-2,2,-2,4]
     # arr = [-20,-3,-4,-10,-20,-10,-10,-3]
     ob = Solution()
     ob.maxSubsetSum(arr)
