@@ -31,6 +31,6 @@ if __name__=="__main__":
     arr = [1,-8]
     ob.max_sum(arr,3)
     
-    arr = [1,5,4,2,9,9,9]
+    arr = [1,5,4,2,9,9,1]
     ob.max_sum(arr,3)
 # } Driver Code Ends
