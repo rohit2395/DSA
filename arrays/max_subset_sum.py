@@ -50,17 +50,78 @@ class Solution:
         print("Starting Index %d" % (start))
         print("Ending Index %d" % (end))
 
+    def onlyMaxSubArraySum(seld,arr):
+        N = len(arr)
+        max_sum = arr[0]
+        current_sum = arr[0]
+        for i in range(1,N,1):
+            current_sum = max(current_sum+arr[i],arr[i])
+            max_sum = max(max_sum,current_sum)
+        print("Maximum contiguous sum is %d" % (max_sum))
+
 
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
 
 if __name__=="__main__":
-    # arr = [-2,-3,4,-1,-2,-1,15,-15,1,2,15,-3]
-    # arr = [-2,-3,4,-1,2,-1]
-    arr = [2,-2,2,-2,4]
-    # arr = [-20,-3,-4,-10,-20,-10,-10,-3]
+
     ob = Solution()
+    print()
+    print("#############################################")
+    print()
+    arr = [-2,-3,4,-1,-2,-1,15,-15,1,2,15,-3]
+    print(arr)
+    print("---------------------------------------------")
     ob.maxSubsetSum(arr)
+    print("---------------------------------------------")
     ob.maxSubArraySum(arr)
+    print("---------------------------------------------")
+    ob.onlyMaxSubArraySum(arr)
+    print()
+    print("#############################################")
+    print()
+    arr = [-2,-3,4,-1,2,-1]
+    print(arr)
+    print("---------------------------------------------")
+    ob.maxSubsetSum(arr)
+    print("---------------------------------------------")
+    ob.maxSubArraySum(arr)
+    print("---------------------------------------------")
+    ob.onlyMaxSubArraySum(arr)
+    print()
+    print("#############################################")
+    print()
+    arr = [2,-2,2,-2,4]
+    print(arr)
+    print("---------------------------------------------")
+    ob.maxSubsetSum(arr)
+    print("---------------------------------------------")
+    ob.maxSubArraySum(arr)
+    print()
+    ob.onlyMaxSubArraySum(arr)
+    print()
+    print("#############################################")
+    print()
+    arr = [-20,-3,-4,-10,-20,-10,-10,-3]
+    print(arr)
+    print("---------------------------------------------")
+    ob.maxSubsetSum(arr)
+    print("---------------------------------------------")
+    ob.maxSubArraySum(arr)
+    print("---------------------------------------------")
+    ob.onlyMaxSubArraySum(arr)
+    print()
+    print("#############################################")
+    print()
+    arr = [-5, -3, -6, -2]
+    print(arr)
+    print("---------------------------------------------")
+    ob.maxSubsetSum(arr)
+    print("---------------------------------------------")
+    ob.maxSubArraySum(arr)
+    print("---------------------------------------------")
+    ob.onlyMaxSubArraySum(arr)
+    print()
+    print("#############################################")
 # } Driver Code Ends
